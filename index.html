@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <div class="bg-[#120a06] min-h-screen flex justify-start items-center flex-col">
+        <div class="flex w-full justify-start min-[825px]:hidden">
+            <button id="menu" class="text-white text-4xl px-4">
+                ☰
+            </button>
+        </div>
+        
+        <div id="group_btn" class="hidden min-[825px]:flex p-4 gap-y-4 md:gap-x-8 flex-col min-[825px]:flex-row items-start w-full min-[825px]:justify-center">
+            
+            <button id="Indian" class="text-orange-500 text-xl font-semibold border-2 border-orange-500 px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-orange-500 hover:text-white cursor-pointer">
+                Indian
+            </button>
+
+            <button id="Canadian" class="text-red-600 text-xl font-semibold border-2 border-red-600 px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-red-600 hover:text-white cursor-pointer">
+                Canadian
+            </button>
+
+            <button id="American" class="text-blue-500 text-xl font-semibold border-2 border-blue-500 px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-blue-500 hover:text-white cursor-pointer">
+                American  
+            </button>
+
+            <button id="Thai" class="text-green-500 text-xl font-semibold border-2 border-green-500 px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-green-500 hover:text-white cursor-pointer">
+                Thai
+            </button>
+
+            <button id="British" class="text-sky-400 text-xl font-semibold border-2 border-sky-400 px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-sky-400 hover:text-white cursor-pointer">
+                British
+            </button>
+
+            <button id="Russian" class="text-white text-xl font-semibold border-2 border-white px-3 py-1 rounded-xl transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer">
+                Russian
+            </button>
+        </div>
+
+        <div id="search_div" class="w-full flex justify-center">
+            <input type="text" id="search" placeholder="Search Recipe..."
+            class="bg-[#241a15] text-white border-2 border-orange-500 text-lg px-6 py-2 rounded-xl placeholder:text-gray-400
+            w-[90%] md:w-[500px] outline-none my-2">
+        </div>
+        <div id="food" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4 w-full max-w-7xl mx-auto">
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
